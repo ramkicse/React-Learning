@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Birthday from './birthday'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App headerName='asf' color='red'/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
