@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import Cakelist from './cakelist'
+//import Cakelist from './cakelist'
 import Header from './Header';
 import Footer from './Footer';
 import Products from './products';
+import PropTypes from 'prop-types'
+import ShoppingBasket from './ShoppingBasket';
 
 
 
@@ -13,7 +15,9 @@ function App(props) {
       <Header/>
       <header className="App-header">
         
-        <Products/>
+        {/* <Products/> */}
+        {/* <Counter count='5'/> */}
+        <ShoppingBasket />
       </header>
       <Footer/>
 
@@ -22,3 +26,8 @@ function App(props) {
 }
 
 export default App;
+
+App.propTypes = {
+  arra : PropTypes.array,
+  demo : PropTypes.bool.isRequired
+}

@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import Birthday from './birthday'
 import * as serviceWorker from './serviceWorker';
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {faPlus, faTrash, faEdit} from '@fortawesome/free-solid-svg-icons'
+import LuckyWinner from './LuckyWinner';
+import ShoppingBasket from './ShoppingBasket';
 
+
+library.add([faPlus, faTrash, faEdit])
 ReactDOM.render(
   <React.StrictMode>
-    <App headerName='asf' color='red'/>
-    
+  
+    {/* <LuckyWinner/>  */}
+    <ShoppingBasket />
   </React.StrictMode>,
   document.getElementById('root')
 );

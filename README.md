@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+Create a shopping basket and generate the total bill of the shopping basket
+
+There will be 3 input operator will give
+1. Itemname
+2. ItemPrice
+3. ItemQty
+
+Button -> Add to Basket
+
+After clicking on Add to Basket ,
+
+I should see the list of items along with its details below and I should able to remove or update that item in the list
+
+There will be a button to Empty the shopping basket
+
+There will be a button to calculate the total bill
+When I click on it I should get the total bill of my shopping(Hint : use reduce function in javascript)
