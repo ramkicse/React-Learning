@@ -63,6 +63,10 @@ class ShoppingBasket extends React.Component{
 
 
         console.log(itemName)
+        var temp = this.state.baskets.filter((item)=> item.name !=data.name)
+        if (temp.length > 0) {
+            return 'You already added'
+        }
         this.setState((prevState) => ({
             baskets: prevState.baskets.concat(data)
         }))

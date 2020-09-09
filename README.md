@@ -73,7 +73,7 @@ Create a shopping basket and generate the total bill of the shopping basket
 
 There will be 3 input operator will give
 1. Itemname
-2. ItemPrice
+2. ItemPricecreate
 3. ItemQty
 
 Button -> Add to Basket
