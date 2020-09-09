@@ -9,6 +9,7 @@ import { faPlus, faTrash, faEdit } from '@fortawesome/free-solid-svg-icons'
 
 import Router from './Router/Router';
 import { createStore } from 'redux'
+import Expence from './redux-expences';
 
 
 library.add([faPlus, faTrash, faEdit])
@@ -141,7 +142,8 @@ console.log("After  SET State ", store.getState())
 
 
 ReactDOM.render(
-  <Router></Router>,
+  // <Router></Router>,
+  <Expence></Expence>,
 
   document.getElementById('root')
 );
