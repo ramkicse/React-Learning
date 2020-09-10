@@ -24,12 +24,16 @@ library.add([faPlus, faTrash, faEdit])
 
 
 const store  = configureStore();
+// const today= new Date();
+// const gasDate =  today. - 5); 
+// const ebDate =  new Date(today.getDate() - 1); 
+// const waterDate =  new Date(today.getDate() - 10); 
+// console.log(gasDate.getMilliseconds())
 
-
-store.dispatch(addExpense({desc:'Water bill', amount:500}))
-store.dispatch(addExpense({desc:'Gas bill', amount:800}))
-store.dispatch(addExpense({desc:'Elecrcity bill', amount:2500}))
-store.dispatch(addExpense({desc:'Mobile bill', amount:1500}))
+store.dispatch(addExpense({desc:'Water bill', amount:500, createAt: new Date("September 10, 2020 00:00 PM").getTime()}))
+store.dispatch(addExpense({desc:'Gas bill', amount:800, createAt: new Date("September 1, 2020 00:00 PM").getTime()}))
+store.dispatch(addExpense({desc:'Elecrcity bill', amount:2500, createAt: new Date("September 5, 2020 00:00 PM").getTime()}))
+store.dispatch(addExpense({desc:'Mobile bill', amount:1500, createAt: new Date("September 7, 2020 00:00 PM").getTime()}))
 
 const state = store.getState();
 const visibleExpences = getVisibleExpenses(state.expenses,state.filters)

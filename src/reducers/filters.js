@@ -2,6 +2,7 @@
 
 export const filtersReducersDefaultState = {
     text: '',
+    amount: -1,
     sortBy: 'date',
     startDate: undefined,
     endDate: undefined
@@ -18,6 +19,12 @@ export default (state = filtersReducersDefaultState, action) => {
             return {
                 ...state,
                 sortBy: 'date'
+            }
+        case 'SET_AMOUNT_FILTER':
+            //console.log(action.amount)
+            return {
+                ...state,
+                amount: action.amount
             }
         case 'SORT_BY_AMOUNT':
 
