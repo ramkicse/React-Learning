@@ -1,6 +1,7 @@
 
 
 export default (expenses, { text, sortBy, startDate, endDate }) => {
+    //console.log(expenses)
     return expenses.filter((expense) => {
         //  console.log(startDate)
         const startDateMatch = typeof startDate !== 'number' || expense.createAt >= startDate;

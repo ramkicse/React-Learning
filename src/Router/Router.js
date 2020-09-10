@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
