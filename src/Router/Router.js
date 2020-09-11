@@ -9,6 +9,8 @@ import Help from '../Expences/Help';
 import Dashboard from '../Expences/Dashboard';
 import NotFoundPage from '../Expences/NotFoundPage';
 import MenuHeader from './MenuHeader';
+import createExpense from '../Expences/createExpense'
+
 
 const Router = ()=>(
     <BrowserRouter>
@@ -17,7 +19,7 @@ const Router = ()=>(
   
         <Switch>
           <Route path="/" component={Dashboard} exact={true} />
-          <Route path='/create' component={AddExpence} />
+          <Route path='/create' component={createExpense} />
           <Route path='/edit/:id' component={EditExpence} />
   
           <Route path='/help' component={Help} />
